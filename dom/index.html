@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="width:50%; margin: auto; border: 2px solid black;">
+        <input id="digit1" placeholder="enter digit 1st" />
+        <input id="digit2" placeholder="enter digit 2nd" />
+        <button onclick="calc()">Calculate sum</button>
+        <div id="answer"></div>
+    </div>
+</body>
+
+</html>
+<script>
+    calc = () => {
+        let sum = 0
+        let digit1 = +document.getElementById("digit1").value
+        let digit2 = +document.getElementById("digit2").value
+        let answer = document.getElementById("answer")
+        answer.innerText = digit1 + digit2
+        console.log(answer)
+    }
+</script>
